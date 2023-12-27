@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg') center center fixed;
+    background-size: cover
+  }
+  
+  #calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    max-width: 400px;
+    margin-bottom: 20px;
+    background-color: rgba(244, 236, 236, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(43, 42, 42, 0.1);
+    padding: 20px;
+  }
+  
+  #calculator input {
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+  }
+  
+  #calculator button {
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  #calculator button:hover {
+    background-color: #f0f7f0;
+    color: #0e0f0e;
+  }
+  
+  #history-btn {
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #f1f7f1;
+    color: rgb(240, 231, 231);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+  }
+  
+  #history-tab {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px;
+  }
+  
+  #history-tab.active {
+    transform: translateX(0);
+  }
+  
+  #history-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #history-list li {
+    margin-bottom: 10px;
+  }
+  
+  #display {
+    border-radius: 10px;
+    border: 1px solid rgb(30, 29, 29);
+  }
